@@ -2,9 +2,6 @@ import React from 'react';
 import { graphql, Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
-// const Home = ({ data: { loading, allUsers } }) =>
-//   // must use key when mapping through an array
-//   (loading ? null : allUsers.map(user => <h1 key={user.id}>{user.email}</h1>));
 
 const Home = ({ refetch }) => (
   <Query
@@ -14,7 +11,7 @@ const Home = ({ refetch }) => (
     { ({ loading, data: { allUsers } }) =>
       (loading ? null : allUsers.map(user => <h1 key={user.id}>{user.email}</h1>))
     }
-    </Query>
+  </Query>
 );
 
 
