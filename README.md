@@ -1,5 +1,5 @@
-## About
-This is the client side to a Slack clone application. Following [this tutorial] (https://www.youtube.com/playlist?list=PLN3n1USn4xlkdRlq3VZ1sT6SGW0-yajjL) by Ben Awad.
+## Slack Clone - Client - About
+This is the client side to a Slack clone application. Following [this tutorial](https://www.youtube.com/playlist?list=PLN3n1USn4xlkdRlq3VZ1sT6SGW0-yajjL) by Ben Awad.
 
 Using GraphQL, React, MobX & Semantic UI
 
