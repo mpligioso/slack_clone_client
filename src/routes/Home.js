@@ -2,6 +2,14 @@ import React from 'react';
 import { graphql, Query } from 'react-apollo';
 import gql from 'graphql-tag';
 
+const allUsersQuery = gql`
+    {
+      allUsers {
+        id
+        email
+      }
+    }
+    `;
 
 const Home = ({ refetch }) => (
   <Query
@@ -14,14 +22,5 @@ const Home = ({ refetch }) => (
   </Query>
 );
 
-
-const allUsersQuery = gql`
-{
-  allUsers {
-    id
-    email
-  }
-}
-`;
 
 export default graphql(allUsersQuery)(Home);
